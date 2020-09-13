@@ -17,6 +17,8 @@ word_d should be Wellington
 
 
 ## Run Unit tests
+For this to work, you'd have to google and download the file glove.6B.50d.txt.  
+Place this file in the data directory.   
 
 ```python
 python model_service_test.py
