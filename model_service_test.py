@@ -34,7 +34,6 @@ class ModelServiceTest(unittest.TestCase):
         self.assertEqual(0.274, np.round(ball_croc_sim, 3))
         self.assertEqual(-0.675, np.round(fr_to_paris_as_rome_to_it, 3))
 
-
     def test_complete_analogy(self):
 
         triads_to_try = [('italy', 'italian', 'spain'), ('india', 'delhi', 'japan'), ('man', 'woman', 'boy'),
@@ -42,3 +41,7 @@ class ModelServiceTest(unittest.TestCase):
         for triad in triads_to_try:
             print('{} -> {} :: {} -> {}'.format(*triad,
                                                 self.model_service.complete_analogy(*triad, self.word_to_vec_map)))
+
+
+if __name__ == '__main__':
+    unittest.main()
